@@ -1,0 +1,743 @@
+a.item:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+a.item:after {
+    background: #3d53cf;
+    color: #3d53cf;
+}
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #780c0f;
+    box-shadow: 0px 0px 3px #560000;
+    border: 1px solid #5a0004;
+}
+.market-items .item{
+    background: rgba(255, 0, 7, 0.03);
+    z-index: -1;
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 73px;
+    margin: 6px 13px 0 0;
+    background-clip: padding-box;
+    cursor: pointer;
+	
+	float: left;
+    width: 117px;
+    height: 102px;
+    position: relative;
+    margin-right: 5px;
+    background: rgba(45,43,46,0.7);
+    z-index: -1;
+    cursor: pointer;
+}
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #b8b8b8;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: "Proxima Nova Regular", Helvetica, sans-serif;
+    background-size: 150%;
+    background-color: #1f2124;
+    color: #ededed;
+	background: #1f2124 url(https://s1.ax1x.com/2020/11/06/BWch38.png) no-repeat top center
+}
+
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 90px;
+}
+
+.header .logo {
+    float: left;
+    line-height: 90px;
+}
+
+#sa-promo-value
+{
+	    margin-left: -550px;
+	    outline: 0;
+    outline-offset: 0;
+	box-shadow: 0px 0px 15px #cf3838;
+    animation: shadow_promo 3s infinite ease-in-out;
+	height: 40px;
+    width: 370px;
+    background-color: #323350;
+    padding: 0 14px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+}
+
+.header .topmenu {
+    #margin-left: 170px;
+    list-style: none;
+    float: left;
+    line-height: 90px;
+	
+	text-align: center;
+	width: 100%;	
+}
+
+.header .topmenu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.center {
+    text-align: center
+}
+
+.otst {
+    margin-left: 10px;
+}
+
+.imgCenter {
+    text-align: center;
+}
+
+.low {
+    text-transform: lowercase;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to bottom, #ec7133 0%, #F09819 100%)
+}
+
+.btn-grad:hover {
+    background-position: right center;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.header .profile {
+    margin-top: 20px;
+    float: right;
+}
+
+.header .profile .info {
+    float: left;
+    margin-right: 15px;
+}
+
+.header .profile .info .username {
+    margin-top: 5px;
+    display: block;
+}
+
+.header .profile .info .logout {
+    display: block;
+    font-size: 12px;
+}
+
+.header .profile .avatar {
+    float: left;
+}
+
+.header .profile .avatar img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 25px;
+}
+
+.header .authbtn {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
+    text-align: center;
+    background-color: #5bc760;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 25px;
+    font-size: 14px;
+    box-shadow: 0px 0px 15px #5bc760;
+    animation: shadow_auth 3s infinite ease-in-out;
+}
+
+@keyframes shadow_live {
+    from {
+        box-shadow: 0 0 5px #cf3838;
+    }
+    50% {
+        box-shadow: 0 0 18px #cf3838;
+    }
+    to {
+        box-shadow: 0 0 5px #cf3838;
+    }
+}
+
+@keyframes shadow_promo {
+    from {
+        box-shadow: 0 0 5px #323350;
+    }
+    50% {
+        box-shadow: 0 0 18px #323350;
+    }
+    to {
+        box-shadow: 0 0 5px #323350;
+    }
+}
+
+
+@keyframes shadow_online {
+    from {
+        box-shadow: 0 0 1px rgb(47, 245, 47);
+    }
+    50% {
+        box-shadow: 0 0 6px rgb(47, 245, 47);
+    }
+    to {
+        box-shadow: 0 0 1px rgb(47, 245, 47);
+    }
+}
+
+@keyframes shadow_auth {
+    from {
+        box-shadow: 0 0 2px #4bc53b;
+    }
+    50% {
+        box-shadow: 0 0 5px #4bc53b;
+    }
+    to {
+        box-shadow: 0 0 2px #4bc53b;
+    }
+}
+
+.live {
+    margin-top: 18px;
+}
+
+.live .liveico {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #cf3838;
+    float: left;
+    margin-right: 12px;
+    box-shadow: 0px 0px 15px #cf3838;
+    animation: shadow_live 3s infinite ease-in-out;
+}
+
+.live .live_text {
+    font-family: "Proxima Nova Bold";
+}
+
+.live .livecontainer {
+    margin-top: 16px;
+}
+
+.live .livecontainer .item {
+    float: left;
+    margin-right: 5px;
+    width: 184px;
+    height: 90px;
+    text-align: center;
+}
+
+.live .livecontainer .item:last-child {
+    margin-right: 0px;
+}
+
+.live .livecontainer .item img {
+    border-radius: 3px;
+}
+
+.live .livecontainer .item span {
+    font-size: 12px;
+    color: #a9a1a1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 184px;
+    display: block;
+}
+
+.play {}
+
+.play .heading {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Proxima Nova Bold';
+    font-size: 18px;
+}
+
+.play .heading .h {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.play .heading .sticker {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #359240;
+    font-size: 13px;
+    font-family: 'Proxima Nova Light';
+    border-radius: 10px;
+}
+
+.play .heading .info {
+    font-size: 14px;
+    font-family: 'Proxima Nova Light';
+    margin-top: 13px;
+    color: #a9a1a1;
+}
+
+.play .gamescontainer {
+    width: 1120px;
+    height: 100px;
+    margin: 20px auto;
+	box-shadow: 0 0px 1px #3d53cf, 0 0px 5px #3d53cf;
+    overflow: hidden;
+    position: relative;
+}
+
+.play .gamescontainer #stop {
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5px;
+    height: 100px;
+    width: 3px;
+    background-color: #d85353;
+    box-shadow: 0 0px 5px #c53b3b;
+}
+
+.play .gamescontainer .carusel {
+    width: 25000px;
+    height: 1px;
+}
+
+h1,
+h2,
+h3 {
+    padding-top: 20px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.scroll-text {
+    border: 1px solid red;
+    width: 400px;
+    height: 4.5em;
+    overflow: hidden;
+}
+
+.scroll-text ul {
+    width: 800px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.scroll-text ul li {
+    height: 1.5em;
+}
+
+.scroll-img {
+    /*border: 1px solid red;*/
+    width: 680px;
+    height: 110px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.scroll-img ul {
+    width: 1530px;
+    height: 600px;
+    margin: 0;
+}
+
+.scroll-img ul li {
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+}
+
+#demo4.scroll-img ul,
+#demo5.scroll-img ul {
+    width: 1500px;
+}
+
+#demo5-btn {
+    width: 680px;
+    padding-top: 10px;
+}
+
+#demo6 {
+    width: 1130px;
+}
+
+#demo6-queue {
+    width: 680px;
+}
+
+#demo6 p,
+#demo6-queue p {
+    width: 124px;
+    height: 124px;
+    background-color: lightgray;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 82px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.play .gamescontainer .item {
+    text-align: center;
+    box-shadow: 0 0px 1px #3d53cf, 0 0px 2px #3d53cf;
+    float: left;
+    padding-right: 5px;
+    width: 201.11px;
+    height: auto;}
+
+.play .gamescontainer .item img {
+    max-height: 94px;
+    margin-top: 3px;
+}
+
+.play .buttonblock button {
+    animation: shadow_roll 3s infinite ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px #d82727;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    line-height: 40px;
+    background-color: #d82727;
+    border: none;
+    border-bottom: solid 3px #8d1919;
+    outline: none;
+    color: #fff;
+    font-family: 'Proxima Nova Bold';
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.play .buttonblock button:hover {
+    background-color: #b82222;
+    border-bottom: solid 3px #931a1a;
+}
+
+.play .winContainer {
+    width: 980px;
+    margin: 80px auto;
+    margin-bottom: 100px;
+}
+
+.play .winContainer .left {
+    width: 710px;
+    float: left;
+}
+
+.play .winContainer .right {
+    float: right;
+    width: 250px;
+    text-align: center;
+}
+
+.play .winContainer .right .timertext {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.play .winContainer .right #timer {
+    font-family: 'Proxima Nova Bold';
+    font-size: 22px;
+}
+
+.play .winContainer .right .auth {
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
+    text-align: center;
+    background-color: #5bc760;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 25px;
+    font-size: 14px;
+    box-shadow: 0px 0px 15px #5bc760;
+    animation: shadow_auth 3s infinite ease-in-out;
+}
+
+.auth1 {
+
+    box-shadow: 0px 0px 15px #cf3838;
+    animation: shadow_live 3s infinite ease-in-out;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
+    text-align: center;
+    background-color: #c54d3b;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.play .winContainer .image {
+    float: left;
+}
+
+.play .winContainer .image img {
+    max-height: 100px;
+}
+
+.play .winContainer .text {
+    float: left;
+    line-height: 36px;
+    margin-left: 20px;
+}
+
+.play .winContainer .text .cong {
+    font-family: 'Proxima Nova Bold';
+    font-size: 18px;
+}
+
+.play .winContainer .text .game {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 380px;
+}
+
+.play .winContainer .keyplace {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.play .winContainer .keyplace span {
+    display: block;
+    font-size: 14px;
+    font-family: 'Proxima Nova Light';
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+}
+
+.play .winContainer .keyplace span:last-child {
+    margin-top: 23px;
+    color: #cf3838;
+}
+
+.sponsors {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sponsors .heading {
+    font-family: 'Proxima Nova Bold';
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sponsors .item {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.sponsors .item img {
+    max-height: 90px;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #a9a1a1;
+}
+
+.roullete {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    height: 100px;
+    background: #ffae2f;
+}
+
+.roullete .list-items {
+    padding-left: 2px;
+    padding-right: 2px;
+    background-repeat: repeat-x;
+    padding: 2px 0;
+    width: 100%;
+    height: 94px;
+}
+
+.roullete .list-items .item {
+    width: 201px !important;
+    height: 100px;
+    color: #c5b6a1;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.roullete .list-items .item .image {
+    width: 201px;
+    height: 94px;
+}
+
+.roullete .list-items .item img {
+    max-width: 201px;
+    max-height: 94px;
+    margin-top: 3px;
+}
+
+.roullete .list-items .line {
+    height: 74px;
+    left: 50%;
+    width: 2px;
+    margin-left: -2px;
+    background: #ff5826;
+    top: 50%;
+    margin-top: -38px;
+    position: absolute;
+}
+
+#aCanvas {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#casesCarusel {
+    width: 15000px;
+}
+
+.online_icon {
+    box-shadow: 0px 0px 15px rgb(47, 245, 47);
+    animation: shadow_online 3s infinite ease-in-out;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: rgb(47, 245, 47);
+    border-radius: 100%;
+    margin-right: 7px;
+}
+
+.top_players {
+    width: 800px;
+    margin: 0 auto;
+    /*background-color: #271f38;*/
+    margin-bottom: 80px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table th {
+    height: 50px;
+    /*min-width: 150px;*/
+}
+
+table td {
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+table .avatar {
+    width: 32px;
+    height: 32x;
+    border-radius: 5px;
+}
+
+.top_players .heading {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Proxima Nova Bold';
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+a,
+a:active,
+a:focus {
+    outline: none;
+}
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    background-color: #4BC53B;
+    border: 0rem solid #4BC53B;
+    border-radius: 9rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9rem !important;
+    height: 2.7rem;
+    line-height: 0;
+    padding: 0 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: "Proxima Nova Regular", Helvetica, sans-serif;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
