@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
 
 		var gameName = getCookie('gameName');
 		console.log(gameName)
