@@ -1,7 +1,6 @@
 $( document ).ready(function() {
 
 		var gameName = getCookie('gameName');
-		console.log(gameName)
 		var time = getCookie('nextPlay');
 		var appId = getCookie('appid');
 
