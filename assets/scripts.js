@@ -87,7 +87,7 @@ var players = [
 {name: "Butterfly Knife | Doppler (Factory new)", appid: "-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf0ebcZThQ6tCvq4GGqPP7I6vdk3lu-M1wmeyVyoD8j1yg5UM-YDz2I4OScwJsZl7Vr1O9x-u9g8K6uJnOzHM16ScktnmJmR23hhhSLrs4sbhU0c4"}
 ];
 var caseScrollAudio = new Audio();
-caseScrollAudio.src = "./click.mp3";
+caseScrollAudio.src = "https://raw.githack.com/dutuvo11554/site/main/click.mp3";
 caseScrollAudio.volume = 0.3;
 
 function getRandomInt(min, max) {
